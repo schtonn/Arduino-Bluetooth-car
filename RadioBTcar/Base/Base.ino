@@ -7,12 +7,14 @@
 
 #include <SoftwareSerial.h>
 
-const byte RADIOs = 2;
-const byte RADIOr = 3;
+const byte RADIOs = 2; //Radio Send
+const byte RADIOr = 3; //Radio Recieve
 SoftwareSerial RADIO(RADIOs, RADIOr);
-const byte BTs = 4;
-const byte BTr = 5;
+const byte BTs = 4; //Bluetooth Send
+const byte BTr = 5; //Bluetooth Recieve
 SoftwareSerial BT(BTs, BTr);
+
+char code;
 
 void blink()
 {
@@ -37,8 +39,6 @@ void setup()
   BT.begin(9600);
   Serial.begin(9600);
 
-  char code;
-
   delay(3000);
 }
 
@@ -49,7 +49,7 @@ void loop()
   {
     code = RADIO.read();
     Serial.println(code);
-    RADIO.println(code);
+    RADIO.write(code);
     blink();
   }
 }

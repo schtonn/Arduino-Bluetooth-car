@@ -7,12 +7,12 @@
 
 #include <SoftwareSerial.h>
 
-const byte RADIOs = 10;
-const byte RADIOr = 11;
+const byte RADIOs = 10; //Radio Send
+const byte RADIOr = 11; //Radio Recieve
 SoftwareSerial RADIO(RADIOs, RADIOr);
 
-const byte PINGs = 23;
-const byte PINGr = 22;
+const byte PINGs = 23; //Ultrasound Send
+const byte PINGr = 22; //Ultrasound Recieve
 
 const byte LF = 2; //Left Forward +
 const byte LB = 3; //Left Back +
@@ -96,7 +96,6 @@ void setup()
   RADIO.begin(9600);
   Serial.begin(9600);
 
-
   delay(3000);
 }
 
@@ -136,7 +135,7 @@ void loop()
     int val = random(2);
     if (val == 0)
     {
-      dis = ping();
+      ping();
       while (dis <= 10)
       {
         R();
