@@ -2,7 +2,7 @@
    Radio Bluetooth Car
    Car Part
    Written By Alex
-   2020/23/05
+   2020 May 23rd
 */
 
 #include <SoftwareSerial.h>
@@ -53,19 +53,19 @@ void S()
 {
   WRITE(0, 0, false, false, false, false);
 }
-void F(int SPEED)
+void Forward(int SPEED)
 {
   WRITE(SPEED, SPEED, true, false, true, false);
 }
-void B(int SPEED)
+void Back(int SPEED)
 {
   WRITE(SPEED, SPEED, false, true, false, true);
 }
-void L(int SPEED)
+void Left(int SPEED)
 {
   WRITE(SPEED, SPEED, true, false, false, true);
 }
-void R(int SPEED)
+void Right(int SPEED)
 {
   WRITE(SPEED, SPEED, false, true, true, false);
 }
@@ -113,16 +113,16 @@ void loop()
       switch (code)
       {
       case 'f':
-        F();
+        Forward(100);
         break;
       case 'b':
-        B();
+        Back(100);
         break;
       case 'l':
-        L();
+        Left(100);
         break;
       case 'r':
-        R();
+        Right(100);
         break;
       default:
         S();
@@ -138,7 +138,7 @@ void loop()
       ping();
       while (dis <= 10)
       {
-        R();
+        Right(50);
         delay(500);
         S();
         ping();
@@ -149,7 +149,7 @@ void loop()
       ping();
       while (dis <= 10)
       {
-        L();
+        Left(50);
         delay(500);
         S();
         ping();

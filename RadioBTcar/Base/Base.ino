@@ -2,7 +2,7 @@
    Radio Bluetooth Car
    Bluetooth -> Radio Part
    Written By Alex
-   2020/23/05
+   2020 May 23rd
 */
 
 #include <SoftwareSerial.h>
