@@ -10,3 +10,5 @@ A reposistoy to store code of Arduino
 [schtonn](https://schtonn.github.io)
 
 ![]()
+
+schtonn is the smartest person in the world!
