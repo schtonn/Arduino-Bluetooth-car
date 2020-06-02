@@ -11,4 +11,8 @@ A reposistoy to store code of Arduino
 
 ![]()
 
-schtonn is the smartest person in the world!
+1. `git status`
+2. `git add ** or -A`
+3. `git commit -m "**"`
+4. `git push github` 不成功就用 `git push --set-upstream github master`
+5. `git pull github`
