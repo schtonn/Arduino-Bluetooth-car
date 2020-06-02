@@ -1,6 +1,7 @@
 {
-    "programmer": "AVR ISP",
+    "programmer": "AVRISP mkII",
     "board": "arduino:avr:mega",
     "configuration": "cpu=atmega2560",
-    "sketch": "RadioBTcar\\Base\\Base.ino"
+    "sketch": "RadioBTcar\\Base\\Base.ino",
+    "port": "COM3"
 }
