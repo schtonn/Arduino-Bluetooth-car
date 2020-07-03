@@ -16,7 +16,3 @@ A reposistoy to store code of Arduino
 3. `git commit -m "**"`
 4. `git push github` 不成功就用 `git push --set-upstream github master`
 5. `git pull github`
-6. `D:\Arduino>git lg`
-7. `git reset 1735a`
-
-ow you shidung,hamahamahamahama
