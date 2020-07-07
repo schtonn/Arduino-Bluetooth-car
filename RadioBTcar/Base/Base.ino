@@ -47,6 +47,7 @@ void loop()
   // put your main code here, to run repeatedly:
   if (BT.available())
   {
+    Serial.println("yes: ");
     code = RADIO.read();
     Serial.println(code);
     RADIO.write(code);
