@@ -38,6 +38,7 @@ void setup()
   RADIO.begin(9600);
   BT.begin(9600);
   Serial.begin(9600);
+  Serial.println("start: ");
 
   delay(3000);
 }
