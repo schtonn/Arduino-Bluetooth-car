@@ -54,4 +54,7 @@ void loop()
     RADIO.write(code);
     blink();
   }
+  if(Serial.available()){
+    Serial.println("chuajnkouyouxinhao!!!!youxinhao!!!!");
+  }
 }
