@@ -29,12 +29,6 @@ void setup()
 
   pinMode(13, OUTPUT);
 
-  pinMode(RADIOs, OUTPUT);
-  pinMode(RADIOr, INPUT);
-
-  pinMode(BTs, OUTPUT);
-  pinMode(BTr, INPUT);
-
   RADIO.begin(9600);
   BT.begin(9600);
   Serial.begin(9600);
